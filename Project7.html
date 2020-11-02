@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <!--PROJECT ID:NAS-->
+    <head>
+        <title>NAS</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="navSection">
+            <!--Navbar-->
+            <div class="navBar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Project1.html">Microwave Emitter</a></li>
+                <li><a href="Project2.html">LED Display</a></li>
+                <li><a href="Project3.html">Cold Maker</a></li>
+                <li><a href="Project4.html">VEX Robotics</a></li>
+                <li><a href="Project5.html">Sumobot</a></li>
+                <li><a href="Project6.html">3D Printer</a></li>
+                <li><a href="Project7.html">NAS</a></li>
+                <li><a href="Project8.html">"Hand Prosthetic" Assignment</a></li>
+                <li><a href="Project9.html">Solar Project</a></li>
+                <li><a href="Project10.html">Desktop PC</a></li>
+            </ul>
+            </div>
+    
+            <div class="contact">
+            <!--Contact Info-->
+            <p> Contact Info: <br>
+                Email: ethanvaillancourtcrane@gmail.com <br>
+                Phone: 905-520-6992 <br>
+                LinkedIn: <a href="https://www.linkedin.com/in/ethan-crane-v/" target="_blank">View My Profile</a>
+            </p>
+            </div>
+            </div>
+
+            <div class="page">
+                <!--Text-->
+                <p>
+                    I've always wanted a safe place to keep a backup of my data, and building a NAS(Network Attached Storage) file server has always been something on my list, so once I had accumulated
+                    enough spare computer parts from recycling or upgrading other machines I decided to cobble one together for myself.
+                    <br>
+                    <br>
+                    The power supply, motherboard, CPU, and case were all salvaged from machines that were being thrown away. The hard drives are mostly leftovers from my own computers, swapped out
+                    over time for ones with larger storage capacities. The machine fits into a mini-ITX form factor, and the motherboard is micro-ATX. The power supply came from the salvaged mini-ITX case and
+                    had to be moved to the front to fit the micro-ATX board, and an internal extension cable had to be made to move the power connector port back to the rear of the case.
+                    <br>
+                    <br>
+                    The system features an Intel i3-2120, 8GB DDR3 RAM (non-ECC), and a total storage capacity of 6TB. The server runs FreeNas, a free NAS-oriented operating system based on FreeBSD, 
+                    with the storage pool running RAID-Z2 (aka RAID 6), allowing for 2 disk failures before data loss. This yields a total available storage volume of about 4TB. 5 of the disks
+                    are full 3.5" drives, with one being a 2.5", and some creative mounting had to be used to fit all of the components into the tiny case.
+                    <br>
+                    <br>
+                    The NAS is plugged into a 350W UPS (Uninterruptible Power Supply), providing battery backup when the power goes out. This means that if wall power cuts out there is no risk of
+                    data corruption during a write and no risk of data loss from sudden spin-down. The UPS ended up being a critical component since the house I live in currently is susceptible to
+                    rolling brownouts, which wreak havoc on a NAS that's not designed to spin-down often.
+                </p>
+
+                <!--Images-->
+                <div class="NASimgs">
+                <img src="Images/NAS/NAS.jpg" alt="Image not found!">
+                <p id="inline">Had to cut out a space for the fan in the front panel. The power supply can be seen here as well:</p>
+                <img src="Images/NAS/NASFront.jpg" alt="Image not found!">
+                <p id="inline">Rear IO of the micro-ATX board doesn't quite match the mini-ITX spacing, more cutting solved that:</p>
+                <img src="Images/NAS/NASRear.jpg" alt="Image not found!">
+                <p id="inline">Top monitor is for another computer, bottom is for the NAS:</p>
+                <img src="Images/NAS/terminal.jpg" alt="Image not found!">
+                <p id="inline">Overview of the internals:</p>
+                <img src="Images/NAS/NASOpen.jpg" alt="Image not found!">
+                <p id="inline">Things are pretty cramped in there:</p>
+                <img src="Images/NAS/Cramped.jpg" alt="Image not found!">
+                <p id="inline">Drilled out holes for mounting the HDD's directly to the case and added a fan for more airflow. <br>
+                Not the best for vibration management but it was all I could do given what little space there was in the case:</p>
+                <img src="Images/NAS/HDDMount.jpg" alt="Image not found!">
+            </div>
+                
+            </div>    
+    </body>
+</html>

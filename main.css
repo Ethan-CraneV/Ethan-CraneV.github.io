@@ -1,0 +1,129 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b8b8b8;
+}
+
+.navSection{
+    background-color:#3c4242;
+    color:#ffffff;
+    float: left;
+    height: 100vh;
+    width: 280px;
+    padding: 5px;
+    position: fixed;
+    
+}
+
+.navSection a{
+    text-decoration: none;
+    color:#0a15a3
+}
+
+.navBar a{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.navBar a:hover{
+    color:#0a15a3;
+}
+
+.navBar ul{
+    list-style: none;
+    font-size: 25px;
+    padding-left: 30px;
+}
+
+.navBar li{
+    padding: 10px;
+}
+
+.contact{
+    position:fixed;
+    bottom: 30px;
+    left: 0px;
+    width: 280px;
+    padding-left: 10px;
+    background-color: #4e5353;
+}
+
+.contact p{
+    padding: 5px;
+}
+
+.page{
+    height: 100vh;
+    left: 290px;
+    position: absolute;
+
+}
+
+.page h1{
+    margin: 10px;
+}
+
+.page p{
+    margin: 0px;
+    padding: 20px;
+    
+}
+
+.page ul{
+    list-style: square;
+}
+
+.page li{
+    padding: 3px;
+}
+
+.page img{
+    width: 33%;
+    float: left;
+}
+
+#inline{
+    clear: left;
+}
+
+.page h4{
+    padding-left: 20px;
+    margin: 0;
+}
+
+.todo{
+    position: relative;
+    float:left;
+    width: 50%;
+    margin: 0px;
+    background-color:#d9dbdb
+}
+
+.todo p{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.todo ul{
+    margin: 0px;
+}
+
+.changelog{
+    position: relative;
+    right: 0px;
+    float:right;
+    width: 50%;
+    margin: 0px;
+    padding-bottom: 0px;
+    background-color:#d9dbdb
+}
+
+.changelog p{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.changelog ol{
+    margin: 0px;
+}
+

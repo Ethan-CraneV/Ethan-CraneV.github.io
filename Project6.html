@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <!--PROJECT ID:3DPrint-->
+    <head>
+        <title>3D Printer</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="navSection">
+            <!--Navbar-->
+            <div class="navBar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Project1.html">Microwave Emitter</a></li>
+                <li><a href="Project2.html">LED Display</a></li>
+                <li><a href="Project3.html">Cold Maker</a></li>
+                <li><a href="Project4.html">VEX Robotics</a></li>
+                <li><a href="Project5.html">Sumobot</a></li>
+                <li><a href="Project6.html">3D Printer</a></li>
+                <li><a href="Project7.html">NAS</a></li>
+                <li><a href="Project8.html">"Hand Prosthetic" Assignment</a></li>
+                <li><a href="Project9.html">Solar Project</a></li>
+                <li><a href="Project10.html">Desktop PC</a></li>
+            </ul>
+            </div>
+    
+            <div class="contact">
+            <!--Contact Info-->
+            <p> Contact Info: <br>
+                Email: ethanvaillancourtcrane@gmail.com <br>
+                Phone: 905-520-6992 <br>
+                LinkedIn: <a href="https://www.linkedin.com/in/ethan-crane-v/" target="_blank">View My Profile</a>
+            </p>
+            </div>
+            </div>
+
+            <div class="page">
+                <!--Text-->
+                <p>
+                    After I was introduced to 3D printing in first year by using the facilities offered by my university, I decided to purchase a printer of my own. I went for an Anet A8 model,
+                    which was the cheapest do-it-yourself kit available at the time. In the couple years since then printers have been steadily dropping in price, meaning more robust kits are 
+                    available now for around the same amount (great).
+                    <br>
+                    <br>
+                    The Anet A8 is a surprisingly precise performer, and I was more than impressed by the print quality I was achieving out of the box.
+                    After assembling the printer I quickly printed some upgrades for it and purchased a glass bed. The stock aluminum printing bed deformed significantly when heated, and the glass
+                    upgrade provided a nice flat heated printing surface. The Anet A8 however is not a perfect machine. It is made with cheap parts and it requires a significant amount of maintenance.
+                    I've replaced many parts of the printer multiple times due to failure or fatigue. The cheap acrylic frame is susceptible to vibrations, degrading print quality. The extruder is 
+                    decent but has problems with clogging and under extrusion occasionally, and as mentioned the aluminum bed tends to warp when heated. The barebones mainboard has extremely limited specs
+                    and the LCD has suffered from visual degradation over time. When the thing works right it works great though.
+                    <br>
+                    <br>
+                    My biggest issue with printing in the early stages were the fumes it produced. I had the machine in my bedroom, and so I had to
+                    keep both my windows wide open to provide sufficient ventilation. This meant that printing in the winter was a particularly uncomfortable process. When I moved to my next house,
+                    I built a simple enclosure to keep the printer in. I then used some ducting and a salvaged fan from a different project to exhaust the fumes out my window, without it needing to
+                    be completely open.
+                    <br>
+                    <br>
+                    The second issue I had was with levelling the bed. On the Anet A8 especially, levelling the bed is a painful process, and involves ensuring the bed is level in reference to the
+                    extruder head, so that the layers are laid out flat and uniform during printing. It is tedious, and the wingnuts on the Anet used to adjust the bed are not
+                    ergonomic. The bed often becomes unlevel after a few prints as well due to vibrations shaking things loose, so the process has to be repeated again and again. To solve this, I installed
+                    a makeshift auto-level sensor to allow the printer to level itself before every print. 4 conductive pads are placed on the corners of the bed, and the metal extruder head is used as the
+                    probe. As the probe contacts the conductive pads, it completes a circuit, and using this the printer can move to each position and probe the bed until it receives a stop signal, allowing
+                    it to map out the print bed. The printer then saves this information to memory and uses it to correct for an unlevel bed in software by making adjustments to it's printing height so that the
+                    layers are uniform.
+                    <br>
+                    <br>
+                    Finally, I needed a better way to communicate with the printer than physically transferring a microSD card back and forth with instructions for each print. To remedy this I installed a print
+                    server service called OctopPi onto a raspberry pi, and connected the pi to the printer via USB serial. Once the pi was connected to my local network, it enabled me to send instructions and 
+                    monitor my prints from any networked device. This allows me to easily print from my desktop and send commands directly to the printer.
+                    <br>
+                    <br>
+                    Also for reference my preferred slicer software is Cura, I would say it's by far the best free slicing software out there. I create my CAD models in Autodesk Inventor and prepare them for
+                    printing in Cura, before sending them to the printer with Octopi.
+                    <br>
+                    <br>
+                    For bed adhesion I use hairspray, makes the bed sticky and prevents prints from falling off. There's a smoke detector hidden in the box too, in case something were to catch fire
+                    while I'm not paying attention.
+                </p>
+
+                <!--Images-->
+                <img src="Images/3DPrint/Exhaust.jpg" alt="Image not found!">
+                <img src="Images/3DPrint/TheBox.jpg" alt="Image not found!">
+        
+            </div>    
+    </body>
+</html>

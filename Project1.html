@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <!--PROJECT ID:Microwave Emitter-->
+    <head>
+        <title>Microwave Emitter</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="navSection">
+            <!--Navbar-->
+            <div class="navBar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Project1.html">Microwave Emitter</a></li>
+                <li><a href="Project2.html">LED Display</a></li>
+                <li><a href="Project3.html">Cold Maker</a></li>
+                <li><a href="Project4.html">VEX Robotics</a></li>
+                <li><a href="Project5.html">Sumobot</a></li>
+                <li><a href="Project6.html">3D Printer</a></li>
+                <li><a href="Project7.html">NAS</a></li>
+                <li><a href="Project8.html">"Hand Prosthetic" Assignment</a></li>
+                <li><a href="Project9.html">Solar Project</a></li>
+                <li><a href="Project10.html">Desktop PC</a></li>
+            </ul>
+            </div>
+    
+            <div class="contact">
+            <!--Contact Info-->
+            <p> Contact Info: <br>
+                Email: ethanvaillancourtcrane@gmail.com <br>
+                Phone: 905-520-6992 <br>
+                LinkedIn: <a href="https://www.linkedin.com/in/ethan-crane-v/" target="_blank">View My Profile</a>
+            </p>
+            </div>
+            </div>
+
+            <div class="page">
+                <!--Text-->
+                <p>
+                    The goal of this project was to create a wieldable directed microwave emitter to cook or heat something at a distance using the same technology found
+                    in a common household microwave oven. Two versions were made, each of which built by gutting a household microwave oven and rearranging
+                    the magnetron and its power circuit.
+                    <br>
+                    <br>
+                    Magnetron: The magnetron is the device that creates electromagnetic radiation within the microwave wavelength range. It does this via some very very complex
+                    physics that frankly I can only somewhat comprehend. The un-scientific gist of it is that a component is heated within a specially shaped cavity, and as electrons
+                    are released they are whizzed around by the attraction between the component and the surrounding cavity due to their opposite charges. The cavity is very specifically shaped in 
+                    such a way that the magnetic field present within it guides the electrons in arcing paths until they fling around and out the magnetron. During this process the magnetron can get
+                    pretty hot, so some form of thermal management is required as well. To solve this in my case I took a couple 5V AC-DC power converters and wired them in series to drive a 12V computer fan.
+                    For the most part it worked, but a couple of my fans burned out due to the intense magnetic field around the magnetron, and so they had to be replaced.
+                    <br>
+                    <br>
+                    Power Circuit: The power circuit for the magnetron consists of a step-up transformer and high voltage AC capacitor. The step-up transformer increases the mains 120VAC from the wall
+                    up to ~2000VAC. A capacitor and diode are arranged to form a voltage doubler at the output, bringing the total voltage to the 4000VAC required to drive the magnetron. As you can
+                    imagine, I wasn't all that excited by the idea of holding an object at 4000V potential in my hands, fearing it might choose me as it's path to ground. Since the device didn't
+                    have a portable power source of it's own, I was certain to ensure everything was grounded through the connection to mains power. The entire device was powered on via a light switch
+                    installed in the rear, and a lightbulb served as an indicator light for when the device was armed. A pushbutton switch located on the upper carrying handle acted as the trigger,
+                    completing the input circuit to the step-up transformer and energizing the magnetron.
+                    <br>
+                    <br>
+                    Waveguide: The barrel of this device was created from a piece of metal ducting. After some basic research into the subject of waveguides I later learned that the wide circular
+                    shape of the barrel is actually one of the worst shapes I could have used. Something about how the waves propagate causes them to lose power. In version 2 of the Microwave Emitter, I
+                    formed a new waveguide by coating cardboard with layers of aluminum foil. I read somewhere that the most effective waveguide shape was one with a rectangular cross section in which
+                    the length is twice the width. I'm not super knowledgeable in wave behaviour so most of my hope lied in finding experimental results.
+                    <br>
+                    <br>
+                    SAFETY: I researched the possible hazards associated with tinkering in microwaves and took the necessary precautions when working on version 1 and 2 of the device. First and most
+                    important is the obvious factor of 4000VAC coursing through the machine. I was very paranoid of becoming a grounding rod, so I ensured I always had insulating gloves and electrically
+                    rated boots on before powering on the device. The other obvious danger lied in me accidentally cooking myself. Microwave radiation within this range of the spectrum is
+                    non-ionizing, meaning it cannot damage DNA or cause cancer, it can however cook you pretty well, especially in regards to the eyes, so I repurposed
+                    the door of the microwave oven to act as a face shield. It featured a metal grid with holes small enough to allow light to pass through, while blocking the longer wavelengths of the
+                    microwave radiation, allowing me to view the device in safety. A less obvious but more deadly threat to take care of lied in the magnetron itself. Magnetrons are sometimes manufactured with 
+                    beryllium-oxide insulative caps that if cracked can release an extremely hazardous dust into the air. Inhaling this dust can induce lifelong chronic berylliosis, a debilitating lung
+                    condition. I made certain to handle the magnetrons with care.
+                    <br>
+                    <br>
+                    Version 1 of the Microwave Emitter turned out rather successful. Its only drawback was its extremely limited range. The device was only capable of exciting something within a foot of its
+                    barrel, meaning that it didn't exactly microwave things "at a distance" like I originally hoped for.
+                    <br>
+                    <br>
+                    Version 2 of the device sadly never made it past the testing phase. It was during the development of version 2 that I learned that most household microwave ovens come equipped
+                    with a magnetron that is only capable of outputting a limited amount of energy to comply with safety regulations. The energy released decays almost entirely after 
+                    travelling approximately 12 inches through atmosphere. So my goal of obtaining a range above a foot would not be possible. It was then and there that I decided to close this
+                    project for good.
+                    <br>
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=xGRlkV8BAFY" target="_blank">Click here to see a test firing of version 1.</a> 
+                </p>
+
+                <!--Images-->
+                
+                <img src="Images/Microwave Emitter/V1.jpg" alt="Image not found!">
+                <img src="Images/Microwave Emitter/V1Left.jpg" alt="Image not found!">
+                <img src="Images/Microwave Emitter/V1Right.jpg" alt="Image not found!">
+                <img src="Images/Microwave Emitter/V1Internals.jpg" alt="Image not found!">
+                <p id="inline">Version 2:</p>
+                <img src="Images/Microwave Emitter/V2Internals.jpg" alt="Image not found!">
+                
+            </div>    
+    </body>
+</html>

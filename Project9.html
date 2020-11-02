@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <!--PROJECT ID:Solar-->
+    <head>
+        <title>Solar Project</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="navSection">
+            <!--Navbar-->
+            <div class="navBar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Project1.html">Microwave Emitter</a></li>
+                <li><a href="Project2.html">LED Display</a></li>
+                <li><a href="Project3.html">Cold Maker</a></li>
+                <li><a href="Project4.html">VEX Robotics</a></li>
+                <li><a href="Project5.html">Sumobot</a></li>
+                <li><a href="Project6.html">3D Printer</a></li>
+                <li><a href="Project7.html">NAS</a></li>
+                <li><a href="Project8.html">"Hand Prosthetic" Assignment</a></li>
+                <li><a href="Project9.html">Solar Project</a></li>
+                <li><a href="Project10.html">Desktop PC</a></li>
+            </ul>
+            </div>
+    
+            <div class="contact">
+            <!--Contact Info-->
+            <p> Contact Info: <br>
+                Email: ethanvaillancourtcrane@gmail.com <br>
+                Phone: 905-520-6992 <br>
+                LinkedIn: <a href="https://www.linkedin.com/in/ethan-crane-v/" target="_blank">View My Profile</a>
+            </p>
+            </div>
+            </div>
+
+            <div class="page">
+                <!--Text-->
+                <p>
+                    I am a huge fan of renewable energy, with it you never run out of fuel! My family lives over in Nova Scotia and one day they noticed that some solar panels were on sale at a store near
+                    them. I decided to jump on the opportunity to learn how solar home systems work and did some quick research, and a couple weeks later we had all the parts we needed to take the
+                    garage completely off the grid. Now my solar installation is running all the power tools and garden sprinklers back at home.
+                    <br>
+                    <br>
+                    The system itself is capable of a sustained output of 1000W, with 4x100W panels recharging a battery with a capacity of 960Wh.
+                    <br>
+                    <br>
+                    Here's a quick rundown of the parts involved: <br>
+                    1.The 4 solar panels produce 100W each at 12VDC. <br>
+                    2.The charge controller(PWM) regulates the charging of the deep-cycle marine battery, ensuring the panels never overcharge it. <br>
+                    3.The 1000W inverter converts the 12VDC to pure-sine 60Hz 120VAC, same as what you'd get from the grid. <br>
+                    4.The 960Wh battery stores any excess charge for later use.
+                    <br>
+                    <br>
+                    The charge controller is a PWM(Pulse Width Modulation) controller, the cheaper of two varieties. The more expensive option is an MPPT(Maximum Power Point) controller.
+                    <br>
+                    <br>
+                    The disadvantage of the PWM controller is that it must pull down the panel voltage to match the battery voltage while charging. The reason for this is that a 
+                    PWM controller charges a battery by pulsing a switch between the battery and the panels. Modifying the width of this pulse changes the duty cycle and can be used to increase
+                    or decrease effective current flow to the battery. The switch however directly connects the panels to the battery while this happens. This means that if the battery is
+                    at a lower voltage, say 10V, then the panels will be pulled down to this same voltage value. Since power is equal to Current*Voltage, and the current remains unchanged, this
+                    effectively reduces the power output of the panel array, throttling it to charge the battery. 
+                    <br>
+                    <br>
+                    An MPPT controller solves this issue, but usually comes at a greater cost. These controllers intelligently track the maximum "power point" or point at which the incoming voltage and
+                    current are greatest, yielding maximum power. The controller essentially decouples the battery from the panels, converting excess voltage into current, thereby maintaining
+                    maximum power production from the solar panels.
+                    <br>
+                    <br>
+                    The inverter is required to convert the DC power from the battery into AC power needed for the wall outlets in the garage. It generates a sine wave at 60Hz, the standard frequency of the
+                    power grid here in Canada, and boosts the voltage from 12VDC to 120VAC, again to match the grid. This allows any common household appliance to run off the stored power from the
+                    solar array.
+                    <br>
+                    <br>
+                    There is also a smaller 12VDC circuit running in parallel to the inverter circuit that is used to power the sprinkler system. It's more efficient to use the DC power from the battery
+                    directly if possible, as there are no conversion losses.
+                    <br>
+                    <br>
+                    Also our sprinkler system runs on collected rainwater, which I think is pretty neat.
+                    <br>
+                </p>
+
+                <!--Images-->
+                <p id="inline">The panel array. Only 3 were out when this picture was taken. Since we didn't want to make any permanent changes to the garage we lay the panels out during the day, adjusting
+                    their angles as needed. Each panel has a quick-disconnect connector so that we can bring them inside at night:
+                </p>
+                <img src="Images/Solar Project/panels.jpg" alt="Image not found!">
+                <p id="inline">
+                    The 12VDC water pump and water barrel for our sprinkler:
+                </p>
+                <img src="Images/Solar Project/pump.jpg" alt="Image not found!">
+                <p id="inline">
+                    The charge controller, inverter, and battery:
+                </p>
+                <img src="Images/Solar Project/system.jpg" alt="Image not found!">
+            </div>    
+    </body>
+</html>
