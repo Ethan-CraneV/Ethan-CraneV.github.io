@@ -37,45 +37,37 @@
             <div class="page">
                 <!--Text-->
                 <p>
-                    After I was introduced to 3D printing in first year by using the facilities offered by my university, I decided to purchase a printer of my own. I went for an Anet A8 model,
-                    which was the cheapest do-it-yourself kit available at the time. In the couple years since then printers have been steadily dropping in price, meaning more robust kits are 
-                    available now for around the same amount (great).
+                    After I was introduced to 3D printing in the first year of university by using the facilities offered by my university, I decided to purchase a printer of my own. I went for an Anet A8 model,
+                    which was the cheapest do-it-yourself kit available at the time.
                     <br>
                     <br>
-                    The Anet A8 is a surprisingly precise performer, and I was more than impressed by the print quality I was achieving out of the box.
-                    After assembling the printer I quickly printed some upgrades for it and purchased a glass bed. The stock aluminum printing bed deformed significantly when heated, and the glass
-                    upgrade provided a nice flat heated printing surface. The Anet A8 however is not a perfect machine. It is made with cheap parts and it requires a significant amount of maintenance.
-                    I've replaced many parts of the printer multiple times due to failure or fatigue. The cheap acrylic frame is susceptible to vibrations, degrading print quality. The extruder is 
-                    decent but has problems with clogging and under extrusion occasionally, and as mentioned the aluminum bed tends to warp when heated. The barebones mainboard has extremely limited specs
-                    and the LCD has suffered from visual degradation over time. When the thing works right it works great though.
+                    The Anet A8 is a surprisingly precise performer, and I was more than impressed by the print quality I was achieving out of the box. I know this contrasts with most user reviews of this model,
+                    so I must have gotten lucky. I've also been lucky to suffer no thermal failures, which were known to plague this model during the early days.
+                    The printer was upgraded with self-printed parts and given a glass bed to counteract the deformation of the heated aluminum bed.
+                    The Anet A8 is not a perfect machine. It is made with cheap parts and it requires a significant amount of maintenance.
+                    Many parts have been repeatedly replaced due to failure or fatigue. The cheap acrylic frame is susceptible to vibrations, degrading print quality. The extruder is 
+                    decent but has problems with clogging and unde-extrusion occasionally. The barebones mainboard was extremely limited and the LCD has suffered from visual degradation over time.
                     <br>
                     <br>
-                    My biggest issue with printing in the early stages were the fumes it produced. I had the machine in my bedroom, and so I had to
-                    keep both my windows wide open to provide sufficient ventilation. This meant that printing in the winter was a particularly uncomfortable process. When I moved to my next house,
-                    I built a simple enclosure to keep the printer in. I then used some ducting and a salvaged fan from a different project to exhaust the fumes out my window, without it needing to
-                    be completely open.
+                    I'm not a fan of breathing the printer-air while the machine is in use. Though there are no known VOC emission generated from PLA printing, I still don't quite trust that it's wholly
+                    safe to breath in the emissions of the melted plastic. Additionally, I sometimes print in ABS, which is known to generate harmful emissions. Thus I always print with an enclosure around the printer.
                     <br>
                     <br>
-                    The second issue I had was with levelling the bed. On the Anet A8 especially, levelling the bed is a painful process, and involves ensuring the bed is level in reference to the
-                    extruder head, so that the layers are laid out flat and uniform during printing. It is tedious, and the wingnuts on the Anet used to adjust the bed are not
-                    ergonomic. The bed often becomes unlevel after a few prints as well due to vibrations shaking things loose, so the process has to be repeated again and again. To solve this, I installed
-                    a makeshift auto-level sensor to allow the printer to level itself before every print. 4 conductive pads are placed on the corners of the bed, and the metal extruder head is used as the
-                    probe. As the probe contacts the conductive pads, it completes a circuit, and using this the printer can move to each position and probe the bed until it receives a stop signal, allowing
-                    it to map out the print bed. The printer then saves this information to memory and uses it to correct for an unlevel bed in software by making adjustments to it's printing height so that the
-                    layers are uniform.
+                    I'm also not a fan of manual bed levelling, though I don't believe anyone really is. I believe a bed-levelling probe is an absolute requirement. It's good to see auto-bed levelling being
+                    implemented by manufacturers in most modern 3D printer models. My first bed leveller consisted of conductive pads that were tied to a pin on the mainboard. A potential was applied to the hotend
+                    and it was used as a probe to complete the circuit, thus detecting the bed. This would run into issues when the nozzle would get dirty or ooze during preheating before prints. Interestingly this is starting
+                    to become a trend again as we see some of the larger printer manufacturers implementing this "direct probe" approach in their models. These new printers often include a self-cleaing nozzle.
                     <br>
                     <br>
-                    Finally, I needed a better way to communicate with the printer than physically transferring a microSD card back and forth with instructions for each print. To remedy this I installed a print
-                    server service called OctopPi onto a raspberry pi, and connected the pi to the printer via USB serial. Once the pi was connected to my local network, it enabled me to send instructions and 
-                    monitor my prints from any networked device. This allows me to easily print from my desktop and send commands directly to the printer.
+                    I consider a print server a must-have component in modern printers as well. 2D printers have had this for well over a decade now, though understandably 3D print servers have increased processing
+                    requirements for handling things like remote print monitoring or 3D viewer rendering. My 3D printer lacks an integrated print server, so all network communication is handled by an external raspberry pi
+                    and OctoPrint, which is the standard arrangement for 3D printers without servers.
                     <br>
                     <br>
-                    Also for reference my preferred slicer software is Cura, I would say it's by far the best free slicing software out there. I create my CAD models in Autodesk Inventor and prepare them for
-                    printing in Cura, before sending them to the printer with Octopi.
+                    My slicer of choice is Cura. This can be a divisive topic, depending on who you ask. As an aside, I have tried PrusaSlicer and Bambu Studio and I must say I'm actually quite a fan of both, but for feature support
+                    and just for familiarity's sake I have always used Cura, though I am not opposed to switching in the future should one slicer prove to be more feature rich while remaing stable and in active development.
                     <br>
                     <br>
-                    For bed adhesion I use hairspray, makes the bed sticky and prevents prints from falling off. There's a smoke detector hidden in the box too, in case something were to catch fire
-                    while I'm not paying attention.
                 </p>
 
                 <!--Images-->

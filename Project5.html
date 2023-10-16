@@ -37,51 +37,47 @@
             <div class="page">
                 <!--Text-->
                 <p>
-                    During my second year at McMaster, I took part in the "sumobot" competition. The goal of this competition was to create an autonomous robot that was capable of pushing
-                    an opponent's robot out of a defined ring to score. The competition imposed a set of constraints on the
-                    combatants, such as requiring the robots to be no larger than 10cm x 10cm in length and width (height was unrestricted), and weigh no more than 500g. I teamed with
-                    two of my friends for the competition, me as the hardware designer with them on software, though there was some overlap between. 
+                    McMaster used to host yearly "sumobot" competitions for students. The goal of this competition was to create an autonomous robot that was capable of pushing
+                    an opponent's robot out of a ring to score. The competition imposed a set of constraints on the
+                    combatants, such as requiring the robots to be no larger than 10cm x 10cm in length and width (height was unrestricted), and weigh no more than 500g. My responsibilities in our
+                    team included the hardware design and construction.
                     <br>
                     <br>
-                    I created a CAD model of a chassis that fit the constrictions exactly, and used my 3D printer to fabricate them. The robot was designed in two pieces. A lower chassis housed
-                    the drive motors and battery, while the upper portion housed the microcontroller. Originally I intended to include fold-out arms that would deploy to push the opponent forward,
-                    but I ran out of time before I could implement them.
+                    A CAD model of the chassis was first created, which was then 3D printed. The entirety of the chassis was 3D printed. The robot was designed in two pieces. A lower chassis housed
+                    the drive motors and battery, while the upper portion housed the microcontroller.
                     <br>
                     <br>
-                    My partners meanwhile were working on writing the robot's behavioural routine. Using IR sensors on the bottom of the chassis, it would detect the edge of the ring and move to get away from
-                    it. And using an ultrasonic sensor on the front of the chassis, the robot would be able to locate it's opponent and charge after it. If given more time, the action to deploy it's arms
-                    towards the opponent would have been implemented as well.
+                    The other team members developed the robot's behavioural routine. Using IR sensors on the bottom of the chassis, it would detect the edge of the white-painted ring and move to get away from
+                    it. Using an ultrasonic sensor on the front of the chassis, the robot would be able to locate the opponent and charge toward it.
                     <br>
                     <br>
-                    For our drive train, we went with a more unorthodox method of using servo motors to drive treaded tracks. Our decision to use servos instead of the usual DC motors came from
+                    For the drive train, we went with a more unorthodox method of using servo motors to drive treaded tracks. Our decision to use servos instead of high-speed DC motors came from
                     the idea that servo motors have internal gearboxes, giving them very high output torque. We hoped to use this torque to push our opponents from the ring. As it turned out, most
-                    servos aren't designed to allow multiple revolutions, so we had to modify them and remove their internal potentiometers to allow them to rotate freely. 
+                    servos aren't designed to allow multiple revolutions, so we had to modify them and remove their internal potentiometers to allow them to rotate freely. Looking back, we probably could have
+                    sourced geared DC motors instead, but we didn't think of this at the time.
                     <br>
                     <br>
-                    All in all it seemed the robot was coming along nicely, but then midterms hit us soon before the competition. With us prioritizing our midterms over the robot, and
-                    the competition fast approaching, we became pressed to actually test and finish the device and its subsystems. 
+                    Midterms arrived just before the competition that year. This created time-management issues as we struggled to prioritize studying vs robot development.  
                     <br>
                     <br>
-                    Testing began and many issues cropped up fast. Turns out, our original plan to run the robot on a 9VDC battery wouldn't work, as we quickly discovered that 9V batteries can't output 
-                    very much current at all, and our servos constantly demanded high currents to fuel their
-                    high-torque driveshafts. This meant that the robot basically couldn't move. In a panic we grabbed the nearest power source available, a portable USB battery, and ran
-                    the Arduino from that. We didn't have time to investigate if the Arduino was limiting current output, but it was working for the most part so we rolled with it.
+                    Many issues made themselves known during testing. Though we didn't know it at the time, the power draw of the servo-driven drive train was above the maximum output capabilities
+                    of the arduino microcontroller. (We tried to drive the servos directly from the arduino, please forgive us, we were young and stupid)
                     <br>
                     <br>
                     On top of the power problem, we soon discovered our IR sensors didn't work either. We were missing a crucial driver board required that processed the raw analog values from the IR 
-                    emitter and receiver diodes into digestible digital data for the Arduino. Since we had been mostly simulating our behavioural routine up until this point, we did not see this sensor
-                    issue coming until it hit us.
+                    emitter and receiver diodes into digestible digital data for the Arduino. (Again, we sort of just dove into this without much preparation or research, looking back you think it's so
+                    obvious, but at the time we were oblivious)
                     <br>
                     <br>
-                    With our environmental awareness gutted from the loss of the IR sensors, we decided to go primal. We coded a simple routine in which our robot would simply spin around on the spot
+                    With our environmental awareness gutted from the loss of the IR sensors, we decided to go primal. We made a simple routine in which our robot would simply spin around on the spot
                     until its ultrasonic sensor picked up a target. Once found, our robot would charge forward blindly at its opponent, stopping only if it lost line-of-sight, and resuming its
                     search. This purely predatory program was surprisingly effective, and actually resulted in a few victorious rounds during the competition.
                     <br>
                     <br>
-                    The final cherry on top came from my mistake with making the treaded drivetrain. Every component of the robot was 3D printed, including the tracks that the robot moved about on.
+                    A critical failure came from my mistake with making the treaded drivetrain. Every component of the robot was 3D printed, including the tracks that the robot moved about on.
                     Smooth plastic doesn't have much traction, and even after my efforts to add some hot-glue pads to each tread, the robot was still very slippery. After overcoming our previous perils,
                     it was ultimately this slipperiness that killed our chances at the competition. There were a few moments when the treads would dig in just right, and our robot would plow ahead and
-                    defeat the opponent, but for the most part our robot was killed off every round as its servo torque was wasted and its opponent glided forward without resistance, pushing us out of the ring.
+                    defeat the opponent, but for the most part our robot was killed off every round as its super-servo-torque was wasted while it glided out of the ring.
                     <br>
                     <br>
                     Regardless of the outcome, this was one of the most fun projects I've worked on. I gained a huge amount of insight in project scope management and time allocation, and me and my friends
